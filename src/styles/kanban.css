@@ -1,0 +1,105 @@
+.tickets-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; 
+}
+.tickets-container::-webkit-scrollbar {
+    height: 4px; 
+    width:1px;
+}
+
+.tickets-container::-webkit-scrollbar-thumb {
+    background-color: #2980b9; 
+    border-radius: 10px; 
+}
+
+.tickets-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar {
+    height: 4px; 
+    width:1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2980b9; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
+.cards {
+    flex: 1 0 20%; 
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-10px); 
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0); 
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+.kanban-header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #2980b9; 
+    color: white;
+    position: relative;
+}
+
+.kanban-title {
+    font-size: 2rem;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+}
+
+.github-logo {
+    width: 40px;
+    height: 40px;
+    background-color: white; 
+    color: #2980b9; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.github-logo:hover {
+    transform: scale(1.1); 
+}
